@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.main-box{
+    position: relative;
+    background: url('./download\ \(2\).jpg') right no-repeat ;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+.main-box .sidebar-meneu{
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, .5);
+    left: -280px;
+}
+.sidebar-meneu .logo{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, .5);
+}
+.sidebar-meneu .logo a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    left: 50px;
+    line-height: 60px;
+    text-decoration: none;
+}
+.sidebar-meneu .meneu{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+.sidebar-meneu .meneu li {
+    margin-top: 6px;
+    padding: 14px 20px;
+   transition: all .3 linear ;
+}
+.sidebar-meneu .meneu i{
+    color: #fff;
+    font-size: 20px;
+    padding-right: 8px;
+}
+.sidebar-meneu .meneu a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+.sidebar-meneu .meneu li:hover{
+    border-left: 1px solid #fff;
+    box-shadow: 0 0 4px rgba(255, 255, 255, .5);
+}
+.sidebar-meneu .social-media{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+ .social-media i {
+    padding: 0 5px;
+    color: #fff;
+    opacity: .6;
+    font-size: 20px;
+   transition: all .2 linear ;
+}
+ .social-media i:hover{
+    opacity: 1;
+    transition: all .2 linear ;
+ }
+ #check {
+    display: none;
+ }
+ .main-box .btn-one i {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s linear;
+ }
+.sidebar-meneu .btn-two i{
+    font-size: 15px;
+    line-height:60px;
+    position: absolute;
+    left: 240px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s linear;
+    color: #fff;
+}
+ .btn-one i:hover{
+    font-size: 29x;
+ }
+ .btn-two i:hover{
+    font-size: 20px;
+ }
+ #check:checked ~.sidebar-meneu {
+    left: 0px;
+ }
+ 
+ #check:checked ~.btn-one i{
+    opacity: 0;
+ }
